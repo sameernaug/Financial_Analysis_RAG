@@ -13,7 +13,9 @@ This system integrates multi-source financial data to deliver:
 
 ## 🚀 Live Demo
 
-Access the deployed application: [Streamlit App](https://your-app-link-here)
+Access the deployed application: [Financial Analysis RAG App on Streamlit Cloud](https://financial-analysis-rag.streamlit.app/)
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://financial-analysis-rag.streamlit.app/)
 
 ## 📊 Key Features
 
@@ -224,6 +226,51 @@ For questions or issues:
 - **Machine Learning**: Predictive analytics integration
 - **Mobile App**: Native mobile application
 
+## 🚀 Deployment
+
+### Deploy on Streamlit Cloud
+
+1. Fork this repository to your GitHub account
+2. Go to [Streamlit Cloud](https://streamlit.io/cloud)
+3. Sign in with your GitHub account
+4. Click "New app" 
+5. Select this repository, branch (main/master), and set the main file path to `app.py`
+6. Click "Deploy!"
+
+### Alternative: Run the Simplified Dashboard
+
+For a simpler version with direct Yahoo Finance data:
+
+```bash
+streamlit run scripts/m.py
+```
+
+The simplified dashboard offers:
+- Real-time stock data retrieval
+- Basic risk assessment
+- Price trend visualization
+- Returns distribution analysis
+
+### Local Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/sameernaug/Financial_Analysis_RAG.git
+
+# Navigate to project directory
+cd Financial_Analysis_RAG
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the application
+streamlit run app.py
+```
+
 ## 🏆 Achievement
 
 This system demonstrates:
@@ -236,6 +283,6 @@ This system demonstrates:
 ---
 
 **Built for**: Financial analysis and investment decision-making
-**Technology Stack**: Python, Streamlit, ChromaDB, Sentence Transformers
+**Technology Stack**: Python, Streamlit, ChromaDB, Sentence Transformers, Matplotlib, yfinance
 **Data Sources**: Yahoo Finance, RSS feeds, public financial data
 **Deployment**: Streamlit-ready for immediate use

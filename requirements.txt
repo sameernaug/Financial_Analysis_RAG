@@ -1,10 +1,21 @@
-sentence-transformers
-chromadb
-yfinance
-streamlit
-pandas
-statsmodels
-feedparser
-requests
-transformers
-torch
+# Core dependencies
+sentence-transformers==5.1.0
+chromadb==1.0.17
+yfinance==0.2.65
+streamlit==1.48.1
+pandas==2.3.1
+numpy==2.3.2
+
+# Data visualization
+matplotlib==3.10.5
+plotly==6.3.0
+
+# ML and NLP
+statsmodels==0.14.5
+transformers==4.55.2
+torch==2.8.0
+scikit-learn==1.7.1
+
+# Data acquisition
+feedparser==6.0.11
+requests==2.32.4
