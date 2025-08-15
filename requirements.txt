@@ -1,0 +1,10 @@
+sentence-transformers
+chromadb
+yfinance
+streamlit
+pandas
+statsmodels
+feedparser
+requests
+transformers
+torch
