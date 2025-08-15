@@ -52,7 +52,10 @@ logs/
 .env.production.local
 
 # Streamlit
-.streamlit/
+# Keep configuration files but ignore secrets in local development
+.streamlit/secrets.toml
+# Allow config.toml to be versioned for deployment
+!.streamlit/config.toml
 
 # OS specific
 .DS_Store
